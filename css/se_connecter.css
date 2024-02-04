@@ -17,19 +17,19 @@ h1{
 }
 
 .image_logo{
-    width: 164px;
+    width: 264px;
     height: 137px;
 }
 
 .container{
     display: flex;
-    align-items:flex-end;
+    justify-content: space-around;
     padding: 20px;
 }
 
 h2 {
     color: #FFFFFF;
-    margin-bottom: 20px; 
+    margin: 60px; 
 }
 
 nav {
@@ -59,6 +59,39 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; 
+}
+
+.form h2 {
+    text-align: center; 
+}
+
+.form_control{
+    display: block;
+    width: 578px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e1e1e;
 }
 
 footer {

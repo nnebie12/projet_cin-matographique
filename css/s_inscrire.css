@@ -1,9 +1,3 @@
-body, h1, h2, p, a, img, form, input {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,13 +17,13 @@ h1{
 
 .container{
     display: flex;
-    align-items:flex-end;
+    justify-content: space-around;
     padding: 20px;
 }
 
 h2 {
     color: #FFFFFF;
-    margin-bottom: 20px; 
+    margin: 60px; 
 }
 
 nav {
@@ -48,6 +42,51 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.affichage {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.image_affichage {
+    width: 838px;
+    height: 292px;
+}
+
+
+.form h2 {
+    text-align: center; 
+}
+
+.form_control{
+    display: block;
+    width: 578px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e1e1e;
 }
 
 footer {

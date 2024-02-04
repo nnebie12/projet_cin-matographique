@@ -50,6 +50,42 @@ nav a:hover {
     color: black;
 }
 
+.container_affichage{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_texte{
+    display: block;
+    margin-right: 15px;
+}
+
+.image_affichage{
+    width: 770px;
+    height: 267px;
+}
+
+.container{
+    display: flex;
+    align-items:flex-end;
+    padding: 20px;
+}
+
+h2 {
+    color: #FFFFFF;
+    margin: 60px; 
+}
+
+.texte{
+    margin-bottom: auto;
+    font-size: 25px;
+}
+
+.texte_info{
+    margin-left: 60px;
+    font-size: 13px;
+}
+
 footer {
     color: white;
     text-align: center;
