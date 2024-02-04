@@ -50,6 +50,17 @@ nav a:hover {
     color: black;
 }
 
+.container_description{
+    width: 1200px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
 footer {
     color: white;
     text-align: center;
