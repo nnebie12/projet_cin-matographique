@@ -1,3 +1,9 @@
+body, h1, h2, p, a, img, form, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,8 +27,9 @@ h1{
     padding: 20px;
 }
 
-h2{
+h2 {
     color: #FFFFFF;
+    margin-bottom: 20px; 
 }
 
 nav {
@@ -32,7 +39,7 @@ nav {
 nav a {
     float: left;
     display: block;
-    color: #1E1E1E;
+    color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -43,34 +50,65 @@ nav a:hover {
     color: black;
 }
 
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.texte_span{
+    text-align: center;
+    color: #FFFFFF;
+    margin: 35px;
+
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
+form{
+    display: flex;
 }
 
 input[type="email"],
 input[type="submit"] {
-    width: 100%;
+    width: 18%; 
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    
+}
+
+input[type="email"] {
+    width: 590px;
+    height: 40px;
+    margin-left: 40px; 
+    background-color: #FFFFFF;
 }
 
 input[type="submit"] {
     background-color: #333;
     color: white;
     cursor: pointer;
+    padding: 5px;
+    margin-left: 85px;
 }
 
 input[type="submit"]:hover {
     background-color: #1E1E1E;
+}
+
+.container_description{
+        width: 1200px;
+        height: 150px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center; 
+}
+
+.description{
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
