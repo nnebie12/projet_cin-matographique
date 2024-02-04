@@ -1,8 +1,4 @@
-body, h1, h2, p, a, img, form, input {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -23,13 +19,13 @@ h1{
 
 .container{
     display: flex;
-    align-items:flex-end;
+   justify-content: space-around;
     padding: 20px;
 }
 
 h2 {
     color: #FFFFFF;
-    margin-bottom: 20px; 
+    margin: 60px; 
 }
 
 nav {
