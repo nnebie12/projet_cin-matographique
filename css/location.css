@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #7E141A;
+    
 }
 
 h1{
@@ -17,38 +18,10 @@ h1{
 }
 
 .image_logo{
-    width: 164px;
+    width: 264px;
     height: 137px;
 }
 
-.container{
-    display: flex;
-    align-items:flex-end;
-    padding: 20px;
-}
-
-h2 {
-    color: #FFFFFF;
-    margin-bottom: 20px; 
-}
-
-nav {
-    overflow: hidden;
-}
-
-nav a {
-    float: left;
-    display: block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 .container_affichage{
     display: flex;
@@ -85,6 +58,83 @@ h2 {
     margin-left: 60px;
     font-size: 13px;
 }
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.block_image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block_image img {
+    width: calc(16.666% - 20px); 
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+.container_liste {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+    margin-left: 35px;
+    padding: 10px;
+}
+
+.titre {
+    color: #FFFFFF;
+    margin-bottom: 20px; 
+}
+
+.container_liste div {
+    text-align: center;
+    margin: 0 20px; 
+}
+
+.container_liste img {
+    width: 200px; 
+    height: 150px;
+    margin: 0 auto; 
+    display: block;
+}
+
+.container_liste label {
+    color: #FFFFFF;
+    display: block;
+    margin-top: 10px;
+}
+
+.container_liste input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #CCCCCC;
+    background-color: #EAEAEA;
+    color: #333333;
+    text-align: center;
+}
+
+.container_liste input[type="text"]:focus {
+    outline: none;
+}
+
 
 footer {
     color: white;

@@ -72,6 +72,7 @@ label {
     color: #FFFFFF;
 }
 
+
 input {
     width: 100%;
     padding: 10px;
@@ -88,6 +89,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #1e1e1e;
 }
+
 
 footer {
     color: white;
