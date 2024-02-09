@@ -52,8 +52,9 @@ form{
 
 input[type="email"],
 input[type="submit"] {
-    width: 18%; 
-    padding: 1rem;
+    width: 80rem; 
+    margin-left: 4rem;
+    padding-left: 2rem;
     margin-bottom: 1rem;
     box-sizing: border-box;
     
