@@ -59,13 +59,6 @@ input[type="submit"] {
     
 }
 
-input[type="email"] {
-    width: 59rem;
-    height: 4rem;
-    margin-left: 4rem; 
-    background-color: #FFFFFF;
-}
-
 input[type="submit"] {
     background-color: #333;
     color: white;
