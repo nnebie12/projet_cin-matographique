@@ -1,6 +1,9 @@
-html{
+
+html {
     font-size: 62.5%; /* 62.5% = 10px */ 
-}   
+    background: linear-gradient(to top, rgba(2, 2, 2, 0.5)50%, rgba(0, 0, 0, 0.5)50%),
+        url(../assets/affichage\ film.jpg)no-repeat fixed center center / cover;
+}
 
 body {
     font: 1.6rem sans-serif; /* 16px */
@@ -9,7 +12,6 @@ body {
     box-sizing: border-box;
     letter-spacing: .1rem;
     line-height: 1.6;
-    background-color: #7E141A;
 }
 
 header {
