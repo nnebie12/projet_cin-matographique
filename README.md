@@ -7,6 +7,6 @@ Diane -
 [Voir la publication](https://nnebie12.github.io/projet_cin-matographique/)
 
 Palette graphique
-![alt text](image.png)
+
 
 Police de caractère
