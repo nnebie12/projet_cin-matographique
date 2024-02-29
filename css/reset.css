@@ -16,7 +16,7 @@ body {
 
 header {
     color: white;
-    margin: 2rem 0;
+    margin: 0;
 }
 
 .section {
@@ -26,5 +26,7 @@ header {
 
 h1{
     color: #FFFFFF;
-    text-align: center
+    text-align: center;
+    margin: 0;
+    
 }

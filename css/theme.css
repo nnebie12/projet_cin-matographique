@@ -5,6 +5,9 @@
 .image_logo{
     width: 26.4rem;
     height: 13.7rem;
+    display: inline-block;
+    object-fit: contain;
+   clip-path: circle(30%);
 }
 
 nav {
@@ -51,7 +54,9 @@ h2 {
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
-    margin-top: 2rem; 
+    margin: 2rem auto;
+    max-width: 80rem;
+
 }
 
 form{
@@ -60,14 +65,16 @@ form{
 
 
 input[type="submit"] {
-    width: 80rem; 
+    width: 100%; 
     box-sizing: border-box; 
+    font-size: inherit;
 }
 
 input[type="adressmail"]{
-    padding-left: 2rem;
     margin-bottom: 1rem;
-    width: 80rem;
+    width: 100%; 
+    line-height: 3rem;
+    border-radius: .4rem;
 }
 
 
@@ -106,19 +113,13 @@ footer {
 h1{
     background-color: #7D161E;
     color: #FFFFFF;
-    text-align: center
+    text-align: center;
 }
 
 
 .container_affichage{
     display: flex;
     justify-content: space-around;
-}
-
-.image_affichage{
-    width: 77rem;
-    height: 267px;
-    margin: 0 2rem;
 }
 
 .texte{
@@ -201,8 +202,8 @@ h1{
 }
 
 .image_affichage{
-    width: 77rem;
-    height: 26.7rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10rem red ;
 }
 
 .texte{
@@ -231,17 +232,18 @@ h1{
 
 /* s'inscrire*/
 
-.affichage {
+.container_affichage img, .affichage{
     display: flex;
     align-items: center;
     justify-content: center; 
+    width: 40rem;
+    margin: 0 auto;
+    height: 30vh;
 }
 
-.image_affichage {
-    width: 83.8rem;
-    height: 29.2rem;
+.affichage{
+    padding: 5rem;
 }
-
 
 .form h2 {
     text-align: center; 
@@ -288,10 +290,14 @@ label {
     color: #FFFFFF;
 }
 
-input[type="submit"] {
+
+.button, button, input[type='button'], input[type='reset'], input[type='submit']  {
     background-color: #7D161E;
     color: #FFFFFF;
     cursor: pointer;
+    border: 0;
+
+   line-height: 3.5rem;
 }
 
 input[type="submit"]:hover {
