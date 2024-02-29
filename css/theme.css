@@ -77,19 +77,6 @@ input[type="adressmail"]{
     border-radius: .4rem;
 }
 
-
-
-input[type="submit"] {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-input[type="submit"]:hover {
-    background-color: #1E1E1E;
-}
-
 .container_description{
         width: 120rem;
         height: 15rem;
@@ -272,11 +259,7 @@ h1{
     box-sizing: border-box;
 }
 
-.form_control input[type="submit"] {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-}
+
 
 .form_control input[type="submit"]:hover {
     background-color: #1e1e1e;
