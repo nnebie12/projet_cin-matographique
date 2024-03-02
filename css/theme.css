@@ -125,7 +125,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem 3rem 0 2rem;
+    margin: 1rem;
 }
 
 .block_image img {
