@@ -117,7 +117,7 @@ h1{
 
 .texte_info{
     color: yellowgreen;
-    margin-left: 6rem;
+    margin-left: 2rem;
     font-size: 1.3rem;
 }
 
@@ -138,13 +138,13 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: flex-end; 
-    margin-left: 3.5rem;
     padding: 1rem;
 }
 
 .titre {
     color: #FFFFFF;
-    margin-bottom: 2rem; 
+    margin: 2rem 3rem; 
+    
 }
 
 .container_liste div {
@@ -197,11 +197,7 @@ h1{
     margin-bottom: auto;
     font-size: 2.5rem;
     padding: 1rem;
-}
-
-.texte_info{
-    margin-left: 6rem;
-    font-size: 1.3rem;
+    margin: 1rem;
 }
 
 .block_image {
