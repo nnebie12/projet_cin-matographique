@@ -30,3 +30,18 @@ h1{
     margin: 0;
     
 }
+
+.night-mode {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.day-mode {
+    background-color: #fff; 
+    color: #000; 
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
