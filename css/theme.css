@@ -1,7 +1,12 @@
 @import url(./reset.css);
 
 /* theme css */
+input[type="text"],
+input[type="email"],
+input[type="password"],select{
+    background-color: #fff;
 
+}
 .image_logo{
     width: 26.4rem;
     height: 13.7rem;

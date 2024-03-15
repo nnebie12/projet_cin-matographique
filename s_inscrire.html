@@ -34,7 +34,7 @@
 
         <div class="form">
             <h2>Inscription</h2>
-            <form action="#" method="post" class="form_control">
+            <form method="post" class="form_control">
                 <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" placeholder="nom" required>
     
@@ -45,7 +45,7 @@
                 <input type="email" id="mail" name="mail" placeholder="e-mail" required>
 
                 <label for="mot de passe">Mot de passe</label>
-                <input type="text" id="mot de passe" name="mot de passe" placeholder="mot de passe" required>
+                <input type="password" id="mot de passe" name="mot de passe" placeholder="mot de passe" required>
     
                 <label for="ville">Ville</label>
                 <select id="ville" name="ville" required>
@@ -69,6 +69,7 @@
             &copy; - Movie-Streaming - 2024
         </p>
     </footer>
-    <script src="js/controller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script type="module" src="./js/Controler.js"></script>
 </body>
 </html>

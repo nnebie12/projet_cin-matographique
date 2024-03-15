@@ -1,10 +1,10 @@
 import { User } from './model.js';
-import bcrypt from 'bcryptjs';
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('.form_control');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
         
         const nom = document.getElementById('nom').value;
         const prenom = document.getElementById('prenom').value;
@@ -13,23 +13,24 @@ document.addEventListener("DOMContentLoaded", function() {
         const ville = document.getElementById('ville').value;
         const pays = document.getElementById('pays').value;
         
-        const hashedPassword = require('hashedPassword'); 
-        hashedPassword.genSalt(10, function(err, salt) {
-            hashedPassword.hash("mon mot de passe", salt, function(err, hash) {
+        bcrypt.genSalt(10, function(err, salt) {
+            bcrypt.hash(motDePasse, salt, function(err, hash) {
+                if (err) {
+                    console.error('Erreur lors du hachage du mot de passe:', err);
+                    return;
+                }
+                const user = new User(nom, prenom, email, hash, ville, pays); 
+                
+                sendData(user);
             });
         });
-        hashedPassword.compare("un autre mot de passe", hash, function(err, res) {
-        });
-        const user = new User(nom, prenom, email, hashedPassword, ville, pays); 
-        
-        sendData(user);
     });
 });
 
 function sendData(user) {
-    fetch('URL_DU_SERVEUR', {
+    fetch('', {
         method: 'POST',
-        body: new URLSearchParams(user),
+        body: JSON.stringify(user), 
         headers: {
             'Content-Type': 'application/json'
         }
