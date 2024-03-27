@@ -1,29 +1,29 @@
-import { User } from './model.js';
+import { User } from '../Model/sing-up.js';
 
 
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector('.form_control');
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         const nom = document.getElementById('nom').value;
         const prenom = document.getElementById('prenom').value;
         const email = document.getElementById('mail').value;
-        const motDePasse = document.getElementById('mot_de_passe').value;
+        const motDePasse = document.getElementById('mot de passe').value;
         const ville = document.getElementById('ville').value;
         const pays = document.getElementById('pays').value;
         
-        bcrypt.genSalt(10, function(err, salt) {
-            bcrypt.hash(motDePasse, salt, function(err, hash) {
-                if (err) {
-                    console.error('Erreur lors du hachage du mot de passe:', err);
-                    return;
-                }
-                const user = new User(nom, prenom, email, hash, ville, pays); 
+        const encoder = new TextEncoder();
+        const passwordBuffer = encoder.encode(motDePasse);
+
+        const hashedPasswordBuffer = await crypto.subtle.digest('SHA-256', passwordBuffer);
+
+        const hashedPasswordHex = Array.from(new Uint8Array(hashedPasswordBuffer)).map(byte => byte.toString(16).padStart(2, '0')).join('');
+
+        const user = new User(nom, prenom, email, hashedPasswordHex, ville, pays); 
                 
-                sendData(user);
-            });
-        });
+        sendData(user);
+    
     });
 });
 
